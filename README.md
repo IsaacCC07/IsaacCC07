@@ -1,9 +1,8 @@
-## Hi there 👋
+## Hi there 
 
-# 🛡️ Mi Portafolio de Aprendizaje en Ciberseguridad
+# Mi Portafolio de Aprendizaje en Ciberseguridad
 
-¡Bienvenido! En este repositorio documento mis herramientas de automatización y mis prácticas de hacking ético. Mi objetivo es demostrar mis habilidades en **Python**, **Scripting en Bash** y **Pentesting**.
-
+¡Bienvenido! En este repositorio documento mis herramientas de automatización y mis prácticas de hacking ético. 
 ---
 
 ## 🛠️ Herramientas Desarrolladas
@@ -16,7 +15,6 @@ Este script permite realizar un escaneo de puertos TCP para identificar servicio
     ```bash
     python3 scanner.py
     ```
-*   **Aprendizaje:** Gestión de tiempos de espera (timeouts) y manejo de conexiones de red en Python.
 
 
 ## 2. 🚀 Automatización de Entorno Seguro (ZSH Functions)
