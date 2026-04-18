@@ -1,0 +1,34 @@
+# Función avanzada para activar anonimato y herramientas
+abrir() {
+    echo "--- Configurando entorno seguro ---"
+    sudo anonsurf start
+    sudo service tor start
+    
+    echo -n "--- IP actual de Tor: "
+    curl -s https://ifconfig.me
+    echo -e "\n[+] Modo anonimato ACTIVO"
+    
+    echo -e "\n¿Deseas lanzar una herramienta con Proxychains?"
+    echo "1) Firefox"
+    echo "2) Nmap (ejemplo: nmap -sT -PN <IP>)"
+    echo "3) Ninguna (solo activar anonimato)"
+    echo -n "Selecciona una opción (1-3): "
+    read opcion
+
+    case $opcion in
+        1) echo "[!] Abriendo Firefox seguro..."; proxychains firefox & ;;
+        2) echo -n "Introduce los parámetros de Nmap: "; read params; proxychains nmap $params ;;
+        3) echo "[+] Listo. Usa 'proxychains <comando>' manualmente si lo necesitas." ;;
+        *) echo "[!] Opción no válida, pero el anonimato sigue activo." ;;
+    esac
+}
+
+# La función cerrar se mantiene igual
+cerrar() {
+    echo "--- Desconectando servicios ---"
+    sudo anonsurf stop
+    sudo service tor stop
+    echo -n "--- IP restaurada: "
+    curl -s https://ifconfig.me
+    echo -e "\n[!] Modo anonimato DESACTIVADO"
+}
