@@ -18,12 +18,21 @@ Este script permite realizar un escaneo de puertos TCP para identificar servicio
     ```
 *   **Aprendizaje:** Gestión de tiempos de espera (timeouts) y manejo de conexiones de red en Python.
 
-### 2. Anonimato Suite (Bash)
-Script de automatización para gestionar herramientas de privacidad en sistemas Linux (Kali/Parrot).
 
-*   **Funciones:**
-    *   Inicio rápido de **Anonsurf** para forzar todo el tráfico a través de la red Tor.
-    *   Configuración y ejecución de **Proxychains** para herramientas específicas.
-*   **Requisito:** Tener instalado `anonsurf` y el servicio `tor`.
+## 2. 🚀 Automatización de Entorno Seguro (ZSH Functions)
+
+He desarrollado una suite de comandos personalizados integrados directamente en la shell (`.zshrc`) para gestionar el anonimato del sistema de forma interactiva.
+
+### Comando: `abrir`
+Activa un túnel de seguridad completo y ofrece una interfaz de lanzamiento de herramientas.
+- **Flujo de trabajo:**
+  1. Inicia **Anonsurf** (Túnel Tor para todo el sistema).
+  2. Arranca el servicio **Tor** local.
+  3. Verifica la IP pública para confirmar el enmascaramiento.
+  4. **Menú Interactivo:** Permite lanzar automáticamente **Firefox** o **Nmap** bajo la protección de **Proxychains**.
+
+### Comando: `cerrar`
+Finaliza todos los servicios de forma limpia.
+- **Flujo de trabajo:** Detiene Anonsurf y el servicio Tor, verificando la restauración de la IP real del usuario para evitar fugas de información accidentales.
 
 ---
