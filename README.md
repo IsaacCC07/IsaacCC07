@@ -1,8 +1,6 @@
-## Hi there 
 
-# Mi Portafolio de Aprendizaje en Ciberseguridad
+# Portafolio de Aprendizaje en Ciberseguridad
 
-¡Bienvenido! En este repositorio documento mis herramientas de automatización y mis prácticas de hacking ético. 
 ---
 
 ## 🛠️ Herramientas Desarrolladas
@@ -34,3 +32,20 @@ Finaliza todos los servicios de forma limpia.
 - **Flujo de trabajo:** Detiene Anonsurf y el servicio Tor, verificando la restauración de la IP real del usuario para evitar fugas de información accidentales.
 
 ---
+
+## 📂 WriteUps
+
+ guías sobre como resuelvo algunas maquinas paso a paso:
+
+*   **[Explotación de VNC (Puerto 5900)]**: Cómo obtener acceso root mediante una debilidad en la configuración de contraseñas del servicio VNC.
+
+## 🛠️ Herramientas Utilizadas
+- **Kali Linux** (Máquina atacante)
+- **Metasploitable 2** (Máquina objetivo)
+- **Nmap** (Escaneo de red)
+- **Metasploit Framework** (Explotación)
+- **VNCViewer** (Acceso remoto)
+
+---
+> [!IMPORTANT]
+> **Aviso de Seguridad:** Todo el contenido aquí compartido tiene fines estrictamente educativos y éticos. No me hago responsable del mal uso de esta información.
